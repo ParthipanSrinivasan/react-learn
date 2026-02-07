@@ -28,11 +28,15 @@ const App = () =>{
       <h3>fetch data from an API in React</h3>
       <div className="container">
             <table border="1">
-                      <tr>
+              <thead>
+                  <tr>
                         <th><strong>ID</strong></th>
                         <th><strong>USER_ID</strong></th>
                         <th><strong>TITLE</strong></th>
                       </tr>
+              </thead>
+              <tbody>
+                    
                         {items.map((item) =>(
                           <tr className='item' key={item.id}>
                           <td>{item.id}</td>
@@ -41,6 +45,7 @@ const App = () =>{
                       
                           </tr>
                       ))}
+              </tbody>    
             </table>
       </div>
     </>
