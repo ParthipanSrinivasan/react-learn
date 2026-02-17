@@ -5,6 +5,7 @@ import UseEffHooks from '../hooks/UseEffHooks.jsx'
 import MyForm from '../forms/Form.jsx'
 import FormSubmit from '../forms/Formsubmited.jsx'
 import ContactForm from "../forms/ContactForm.jsx"
+import Api_Fetch from "../python-backend/Api-Fetch.jsx"
 
 const Header = () =>{
     return (
@@ -15,8 +16,9 @@ const Header = () =>{
         <Link to="/hooks">Hooks</Link> |{" "}
         <Link to="/UseEffHooks">Use Effects</Link> |{" "}
         <Link to="/MyForms">Forms</Link> |{" "}
-        <Link to="/Form-submited">FormsSubmited</Link>
-        <Link to="/ContactForm">Contact- FormS</Link>
+        <Link to="/Form-submited">FormsSubmited</Link> |{" "}
+        <Link to="/ContactForm">Contact- FormS</Link> |{" "}
+        <Link to="/Python-Database">Python-Data Fetch</Link>
     </nav>
     <Routes>
         <Route path="/app" element={<App/>} />
@@ -25,6 +27,7 @@ const Header = () =>{
         <Route path="/MyForms" element={<MyForm/>}/>
         <Route path="/Form-submited" element={<FormSubmit/>}/>
         <Route path="/ContactForm" element={<ContactForm/>}/>
+        <Route path="/Python-Database" element={< Api_Fetch/>} />
     </Routes>
     </>
     );
